@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, Star, ArrowUpRight, ArrowDownRight } from 'lucide-react';
-import Stats from './Stats'; // Assuming you have this component
+import Stats from './Stats';
 
 const MOCK_USERS = [
   { id: '1', name: 'Armin A.', avatar: 'https://i.pravatar.cc/150?u=armin', revenue: 209633, percent: 39.63 },
@@ -10,7 +10,7 @@ const MOCK_USERS = [
 
 const Dashboard: React.FC = () => {
   return (
-    // Changed padding to be responsive (p-4 mobile -> p-8 desktop)
+
     <div className="min-h-screen p-4 sm:p-6 lg:p-8 flex justify-center font-inter bg-white">
       <div className="w-full max-w-[1400px] space-y-8">
 
@@ -72,7 +72,6 @@ const Dashboard: React.FC = () => {
         </div>
 
         {/* --- MAIN CONTENT --- */}
-        {/* Changed layout: Stack vertically on small screens, Side-by-side on XL screens */}
         <div className="flex flex-col xl:flex-row gap-8 xl:gap-6 items-start">
 
           {/* 1. REVENUE SECTION (Left Side) */}
@@ -193,7 +192,6 @@ const Dashboard: React.FC = () => {
         </div>
 
         {/* --- CONTRIBUTOR BAR --- */}
-        {/* Changed to stack vertically on mobile */}
         <div className="flex flex-col xl:flex-row items-center gap-4 w-full">
           <div className="flex-1 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 bg-[#F3F4F6] rounded-full p-1">
 
@@ -222,7 +220,6 @@ const Dashboard: React.FC = () => {
           </button>
         </div>
 
-        {/* Graph Component Placeholder - Ensure it doesn't overflow */}
         <div className="mt-8 w-full overflow-hidden">
           <Stats />
         </div>

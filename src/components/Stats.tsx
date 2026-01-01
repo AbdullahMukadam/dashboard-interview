@@ -1,9 +1,8 @@
 import React from 'react';
 import {  ChevronDown, ChevronUp, ArrowUpRight, ArrowUp, Filter, MoreHorizontal, ShoppingBag, Menu, Globe } from 'lucide-react';
 
-// --- Configuration & Mock Data ---
 
-const colors = {
+ const colors = {
     bgMain: '#F8F9FB',
     textPrimary: '#1F2937',
     textSecondary: '#9CA3AF',
@@ -15,8 +14,8 @@ const colors = {
     success: '#22C55E',
 };
 
-// Brand Logos (Unchanged)
-const Logos = {
+
+ const Logos = {
     Dribbble: ({ className, style }: { className?: string, style?: React.CSSProperties }) => (
         <svg className={className} style={style} viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.605 4.61a8.003 8.003 0 00-1.96-1.665c-.155.315-.32.635-.495.955a9.935 9.935 0 002.455.71zm-1.26 2.19a8.027 8.027 0 00.88-1.19 8.053 8.053 0 00-.87-1.32c.4.665.71 1.255.95 1.785.04.085.08.17.12.255-.36.15-.72.29-1.08.42v.05zm-1.275 1.875a9.718 9.718 0 01-2.575-.795c.33-.65.63-1.265.89-1.85.915.28 1.765.595 2.53.94-.28.56-.565 1.125-.845 1.705zm-1.57 1.335a8.11 8.11 0 00.16-2.295A7.997 7.997 0 0012 4c-.6.005-1.195.07-1.77.205.49.69 1.035 1.48 1.61 2.38a11.77 11.77 0 012.725.6c-.245.945-.475 1.87-.68 2.76a10.41 10.41 0 00.68.065zM12 20c-2.77 0-5.225-1.4-6.75-3.54a9.06 9.06 0 003.135-.335c-.545-1.45-1.165-3.02-1.825-4.66a9.57 9.57 0 00-1.87 2.135A8.038 8.038 0 013.8 8.47a8.15 8.15 0 01.34-.76 10.358 10.358 0 013.575 1.775c.72-1.845 1.37-3.745 1.92-5.635A8.04 8.04 0 0112 3.8c1.84 0 3.535.62 4.9 1.675-.295.54-.625 1.13-.98 1.77.77-.23 1.47-.45 2.11-.655.475.72.835 1.525 1.045 2.39a10.332 10.332 0 01-2.62-.965c.195 1.215.36 2.425.495 3.62 1.22-.365 2.12-.805 2.7-.805-.2 3.2-2.07 5.97-4.73 7.325-.03-.12-.065-.235-.1-.35-.645-2.055-1.085-4.195-1.315-6.39-1.355 1.06-2.85 2.02-4.46 2.87.275.86.53 1.735.765 2.62-1.31.475-2.675.845-4.085 1.1a8.01 8.01 0 004.475-1.375z" /></svg>
     ),
@@ -171,7 +170,7 @@ const PlatformValueCard = () => {
     ];
 
     return (
-        // Changed to h-auto for mobile so it stacks, md:h-[300px] fixed for desktop
+
         <div className="bg-[#F3F4F6] rounded-[32px] overflow-hidden flex flex-col md:flex-row shadow-[0_20px_40px_-10px_rgba(0,0,0,0.05)] w-full max-w-full md:max-w-[850px] h-auto md:h-[350px]">
 
             {/* --- Left Panel (Pink) --- */}
@@ -327,7 +326,6 @@ const PlatformValueCard = () => {
 // --- Right Column Components ---
 
 const LeaderboardHeader = () => (
-    // Hidden on mobile (flex layout), visible on tablet+ (grid layout)
     <div className="hidden md:grid grid-cols-12 gap-4 text-[13px] font-bold text-gray-300 px-3 mb-3">
         <div className="col-span-4 pl-2">Sales</div>
         <div className="col-span-2">Revenue</div>

@@ -9,7 +9,6 @@ import "../src/index.css"
 const App: React.FC = () => {
   return (
     <div className="flex h-screen w-full overflow-hidden font-['Inter']">
-      {/* Container with rounded corners to mimic the image exactly */}
       <div className="flex flex-1 overflow-hidden">
         
         {/* Leftmost slim bar */}

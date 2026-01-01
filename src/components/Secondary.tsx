@@ -53,7 +53,7 @@ const TreeLine: React.FC<{ children: React.ReactNode; isLast?: boolean }> = ({ c
   </div>
 );
 
-const SecondarySidebar: React.FC = () => {
+const SecondarySidebar= () => {
   return (
     <div className="w-[260px] bg-[#F3F4F6] px-6 py-8 flex flex-col shrink-0 select-none overflow-y-auto custom-scrollbar">
       {/* Workspace Selector */}

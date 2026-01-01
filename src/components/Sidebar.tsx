@@ -1,7 +1,6 @@
 
-import React from 'react';
 
-const Sidebar: React.FC = () => {
+const Sidebar= () => {
   return (
     <div className="w-[84px] bg-[#F3F4F6] border-r border-gray-100 flex flex-col items-center py-8 justify-between shrink-0 select-none">
       <div className="flex flex-col items-center space-y-8">

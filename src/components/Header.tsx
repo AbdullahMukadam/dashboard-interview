@@ -1,7 +1,6 @@
 
-import React from 'react';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <header className="h-[100px] bg-[#F3F4F6] flex items-center justify-between shrink-0">
       <div className="relative w-[380px]">
